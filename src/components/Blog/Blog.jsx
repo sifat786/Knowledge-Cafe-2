@@ -10,7 +10,7 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
         
         <div>
             {/* /// 1 */}
-            <img className='w-full rounded-lg' src={cover} alt={`this image is called ${title}`} />
+            <img className='w-full rounded-lg' src={cover}/>
 
             {/* /// 2 */}
             <div className='flex items-center justify-between mt-[34px] '>
@@ -32,7 +32,7 @@ const Blog = ({blog, handleAddToBookmark, handleMarkAsRead}) => {
 
             {/* /// 3 */}
             <div className='block mb-10 border-b border-neutral-900 border-opacity-10 pb-[38px]'>
-                <p className='py4 w-[737px] text-neutral-900 text-[40px] font-bold leading-[64px]'>How to get your first job as a self-taught programmer</p>
+                <p className='py4 w-[737px] text-neutral-900 text-[40px] font-bold leading-[64px]'>{title}</p>
                 <div className='flex gap-4 mb-5'>
                     {
                         hashtags.map((hash, idx) => <span key={idx}>
